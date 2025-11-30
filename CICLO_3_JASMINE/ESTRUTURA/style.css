@@ -1,0 +1,175 @@
+
+
+.navbar {
+  background: linear-gradient(90deg, rgba(17,17,17,0.95), rgba(28,4,4,0.95));
+  padding: 0.8rem 0;
+  border-bottom: 2px solid rgba(255,45,45,0.06);
+}
+
+.navbar .brand-title {            
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--cor-accento);
+}
+
+.navbar .logo {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #000;
+  padding: 2px;
+}
+.hero {
+  min-height: 72vh;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--cor-accento);
+  display: flex;
+  align-items: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8,8,8,0.45), rgba(0,0,0,0.7));
+  mix-blend-mode: multiply;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.btn-cta {
+  background: linear-gradient(90deg, var(--cor-primaria), #ff6b6b);
+  border: none;
+  color: white;
+  box-shadow: 0 10px 25px rgba(255,45,45,0.14);
+  border-radius: 10px;
+}
+
+
+.hero h1 {
+  font-size: clamp(2rem, 4.6vw, 3.8rem);
+  color: var(--cor-accento);
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.hero p.lead {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+.bg-dark-section {
+  background: linear-gradient(180deg, var(--section-dark), #0b0b0b);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+
+.card-theme {
+  background: linear-gradient(180deg, rgba(30,30,30,0.9), rgba(18,18,18,0.9));
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: var(--rounded-radius);
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.card-theme img {
+  height: 210px;
+  object-fit: cover;
+}
+
+
+.card-theme:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+}
+
+
+.ticket {
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.ticket .price {
+  font-weight: 700;
+  color: var(--cor-primaria);
+  font-size: 1.2rem;
+}
+
+
+form .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255,45,45,0.12);
+  border-color: var(--cor-primaria);
+}
+
+
+.footer {
+  background: linear-gradient(90deg, rgba(10,10,10,1), rgba(18,8,8,1));
+  color: rgba(255,255,255,0.8);
+  border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+.social-link {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-link:hover {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+
+a.nav-link {
+  color: rgba(255,255,255,0.85);
+}
+a.nav-link:hover {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+  .hero-content { padding: 2rem 1rem; }
+  .card-theme img { height: 180px; }
+}
+
+
+h2 {
+  color: #910e0e;
+}
+
+
+img[alt=""] {
+  background: #222;
+}
+
+
+.text-light { color: #7c0c0c !important; }
+:root {
+  --cor-primaria: #ff2d2d; 
+  --cor-secundaria: #111;  
+  --cor-accento: #ffffff;  
+  --card-bg: #1b1b1b;
+  --section-dark: #0f0f10;
+  --rounded-radius: 14px;
+  --font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background: #060606;   
+  color: #f4f4f4;
+  line-height: 1.5;
+}
